@@ -13,13 +13,14 @@ Este proyecto tiene como objetivo demostrar cómo utilizar DVC para gestionar da
 - Para configurar DVC, cree un archivo dvc.yaml en la raíz de su proyecto. Este archivo contiene la configuración de DVC, como la ubicación del repositorio de datos y la fuente de datos.
 ```
  dvc init
- Creación de un repositorio de datos
 ```
+##  Creación de un repositorio de datos
 Para crear un repositorio de datos, cree una carpeta para almacenar los datos y agregue la carpeta al repositorio de DVC.
-
+```
 mkdir data
 dvc add data
-Adición de datos a un repositorio
+```
+## Adición de datos a un repositorio
 
 Para agregar datos a un repositorio, copie los datos a la carpeta de datos y agregue los datos al repositorio de DVC.
 ```
@@ -59,13 +60,14 @@ Para migrar los cambios a la rama principal, ejecute los siguientes comandos:
 git checkout master
 git merge [nombre-de-la-rama]
 ```
-Comprobación de integridad de los datos
+## Comprobación de integridad de los datos
 
 Para comprobar la integridad de los datos, ejecute el siguiente comando:
 ```
 dvc check
-Publicación de datos
 ```
+
+## Publicación de datos
 Para publicar datos, envíe los cambios al repositorio de DVC.
 ```
 dvc push
